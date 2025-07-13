@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Theme Switcher -->
+  <button id="theme-toggle" aria-label="Toggle Dark/Light Theme" title="Toggle Dark/Light Theme">
+    🌙
+  </button>
+
+  <!-- Sticky Navigation Bar -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="https://www.youtube.com/@keepmovingwithDevesh" class="nav-logo" id="Cha">Chashank</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#landing" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Landing Section -->
+  <section id="landing" class="landing-section">
+    <canvas id="landing-canvas"></canvas>
+    <div class="landing-content">
+      <h1 class="fade-in">Hello, I'm <span class="highlight">Chashank kadekar</span></h1>
+      <p class="fade-in delay-1">A Passionate Web Developement & 3D model</p>
+      <div class="scroll-down bounce" aria-label="Scroll Down" role="img">⬇️</div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <!-- About Me Section -->
+<!-- About Me Section -->
+<section id="about" class="about-section reveal">
+  <h2>About Me</h2>
+  <div class="about-content" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: center; padding: 20px;">
+    
+    <!-- Circular Image -->
+   <div class="about-image-container" style="flex: 0 0 auto; display: flex; justify-content: center; align-items: center; position: relative; z-index: 2;">
+  <a href="https://fractory.com/best-websites-for-mechanical-engineers/" target="_blank" style="pointer-events: auto;">
+    <img src="download (1).jpeg" alt="Chashank Kadekar" 
+         style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);" />
+  </a>
+</div>
+
+    <!-- Text Content -->
+    <div class="about-text" style="flex: 1; min-width: 280px; max-width: 600px;">
+      <p style="font-size: 1.2rem; line-height: 1.6;">
+        My name is <strong>Chashank Kadekar</strong>, and I am a Mechanical Engineering student currently in my second year. 
+        Alongside my core engineering studies, I have developed a strong interest in web development and backend technologies. 
+        I have been learning key programming languages and tools such as C, HTML, CSS, and JavaScript. 
+        In the field of mechanical design, I have gained hands-on experience with AutoCAD in both 2D and 3D, 
+        as well as a basic understanding of SolidWorks. I am passionate about combining my technical knowledge from engineering 
+        with the creativity and logic of web development to build innovative and functional solutions.
+      </p>
+      <a href="assets/bio.pdf" download class="btn btn-primary" 
+         style="display: inline-block; margin-top: 10px; padding: 10px 20px; background-color: #007BFF; color: white; border-radius: 5px; text-decoration: none; margin-right: 20px;">
+         Download Bio PDF
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section reveal">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <!-- Skill 1 -->
+      <div class="skill">
+        <div class="skill-circle" data-percentage="90" aria-label="HTML skill level Expert" tabindex="0">
+          <svg viewBox="0 0 100 100">
+            <circle class="skill-bg" cx="50" cy="50" r="45"></circle>
+            <circle class="skill-progress" cx="50" cy="50" r="45"></circle>
+          </svg>
+          <div class="skill-icon" title="HTML - Expert">HTML</div>
+        </div>
+        <div class="skill-level">Expert</div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="skill">
+        <div class="skill-circle" data-percentage="85" aria-label="CSS skill level Expert" tabindex="0">
+          <svg viewBox="0 0 100 100">
+            <circle class="skill-bg" cx="50" cy="50" r="45"></circle>
+            <circle class="skill-progress" cx="50" cy="50" r="45"></circle>
+          </svg>
+          <div class="skill-icon" title="CSS - Expert">CSS</div>
+        </div>
+        <div class="skill-level">Expert</div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="skill">
+        <div class="skill-circle" data-percentage="80" aria-label="JavaScript skill level Intermediate" tabindex="0">
+          <svg viewBox="0 0 100 100">
+            <circle class="skill-bg" cx="50" cy="50" r="45"></circle>
+            <circle class="skill-progress" cx="50" cy="50" r="45"></circle>
+          </svg>
+          <div class="skill-icon" title="JavaScript - Intermediate">JS</div>
+        </div>
+        <div class="skill-level">Intermediate</div>
+      </div>
+      <!-- Add more skills as needed -->
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section reveal">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!-- Project Card Example -->
+      <div class="project-card">
+        <div class="project-image-container">
+          <img src="OIP.webp" alt="Project 1" />
+        </div>
+        <div class="project-content">
+          <h3>Project One</h3>
+          <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+          <div class="project-buttons">
+            <a href="https://liveproject1.example.com" target="_blank" rel="noopener" class="btn btn-secondary">View Live</a>
+            <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener" class="btn btn-secondary">Source</a>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat project cards as needed -->
+      <div class="project-card">
+        <div class="project-image-container">
+          <img src="web.png" alt="Project 2" />
+        </div>
+        <div class="project-content">
+          <h3>Project Two</h3>
+          <p>A Real use model made by Solidwork check it.</p>
+          <div class="project-buttons">
+            <a href="https://liveproject2.example.com" target="_blank" rel="noopener" class="btn btn-secondary">View Live</a>
+            <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener" class="btn btn-secondary">GitHub Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+ <!-- Resume Section -->
+<section id="resume" class="resume-section reveal">
+  <h2>Resume</h2>
+  <p style="max-width: 600px; margin: auto; font-size: 1rem; text-align: center;">
+    Below is my resume, which highlights my academic background, technical skills, and practical projects. 
+    It includes experience with programming languages, CAD tools, and project-based learning that reflect 
+    my interest in both engineering and web development.
+  </p>
+  <ul style="max-width: 600px; margin: 20px auto; padding-left: 20px; font-size: 1rem;">
+    <li>🎓 Pursuing B.tech. in Mechanical Engineering (2nd Year)</li>
+    <li>💻 Programming: C, HTML, CSS, JavaScript</li>
+    <li>🛠️ Tools: AutoCAD (2D/3D), SolidWorks (Basic)</li>
+    <li>🌐 Web Development: Frontend Design, Backend Fundamentals</li>
+    <li>📂 Projects: Responsive websites, JS-based interactive apps</li>
+  </ul>
+  <a href="assets/resume.pdf" download class="btn btn-primary btn-pulse" aria-label="Download Resume">Download Resume</a>
+</section>
+
+
+  <!-- Contact Me Section -->
+  <section id="contact" class="contact-section reveal">
+    <h2>Contact Me</h2>
+    <form id="contact-form" novalidate>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required aria-required="true" />
+        <small class="error-message" id="name-error"></small>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required aria-required="true" />
+        <small class="error-message" id="email-error"></small>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+        <small class="error-message" id="message-error"></small>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+    <div id="success-notification" role="alert" aria-live="polite" class="success-notification hidden">
+      <p>Thank you! Your message has been sent.</p>
+      <button id="close-notification" aria-label="Close notification">&times;</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+          <!-- Instagram SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm8.75 2a1 1 0 110 2 1 1 0 010-2zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7z"/></svg>
+        </a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+          <!-- GitHub SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12a10 10 0 006.84 9.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34a2.65 2.65 0 00-1.1-1.44c-.9-.62.07-.6.07-.6a2.1 2.1 0 011.53 1.03 2.13 2.13 0 002.9.83 2.14 2.14 0 01.64-1.33c-2.22-.25-4.56-1.1-4.56-4.9a3.83 3.83 0 011-2.67 3.56 3.56 0 01.1-2.63s.83-.27 2.75 1a9.5 9.5 0 015 0c1.92-1.27 2.75-1 2.75-1a3.56 3.56 0 01.1 2.63 3.83 3.83 0 011 2.67c0 3.8-2.34 4.65-4.57 4.9a2.4 2.4 0 01.68 1.87v2.78c0 .27.18.59.69.48A10 10 0 0022 12c0-5.52-4.48-10-10-10z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+          <!-- LinkedIn SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.001 5.001A2.5 2.5 0 014.98 3.5zM3 9h4v12H3V9zm7 0h3.6v1.71h.05a3.95 3.95 0 013.55-1.95c3.8 0 4.5 2.5 4.5 5.75V21H17v-5.5c0-1.3 0-3-1.85-3s-2.15 1.45-2.15 2.9V21H10V9z"/></svg>
+        </a>
+      </div>
+      <p>&copy;2025 Chashank. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
